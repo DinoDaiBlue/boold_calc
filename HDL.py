@@ -5,16 +5,16 @@ def user_input():
 def check_HDL(HDL_num):
 	if HDL_num >= 60:
 		mes = "Normal"
-		print("HDL value is {}, it is {}".format(HDL_num, mes))
 	elif 40 <= HDL_num < 60:
-		mes = "Borderline Low"
-		print("HDL value is {}, it is {}".format(HDL_num, mes))
+		mes = "Borderline Low"	
 	else: 
 		mes = "Low"
-		print("HDL value is {}, it is {}".format(HDL_num, mes))
-	return HDL_num, mes 
+	return HDL_num, mes
+def HDL_output(HDL_num, mes):
+	print("HDL value is {}, it is {}".format(HDL_num, mes)) 
 def driver():
 	HDL_num = user_input()
 	value, mes = check_HDL(HDL_num)
+	HDL_output(value, mes)
 	return value, mes
 value, mes = driver()
