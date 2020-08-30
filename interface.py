@@ -9,7 +9,7 @@ def interface():
 		if choice =='9':
 			break
 		elif choice =='1':
-			value, mes = driver()			
+			value, mes = HDL.driver()			
 			break
 if __name__=="__main__":
 	interface()
