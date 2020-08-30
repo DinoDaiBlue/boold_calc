@@ -1,5 +1,5 @@
+import HDL
 def interface():
-	import HDL
 	while True:
 		print("My Program")
 		print("Options: ")
@@ -12,5 +12,4 @@ def interface():
 			value, mes = driver()			
 			break
 if __name__=="__main__":
-	import HDL
 	interface()
