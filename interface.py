@@ -1,5 +1,5 @@
-import HDL
 def interface():
+	import HDL
 	while True:
 		print("My Program")
 		print("Options: ")
