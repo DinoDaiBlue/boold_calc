@@ -12,6 +12,9 @@ def check_HDL(HDL_num):
 	else: 
 		mes = "Low"
 		print("HDL value is {}, it is {}".format(HDL_num, mes))
-	return  
-HDL_num = user_input()
-check_HDL(HDL_num)
+	return HDL_num, mes 
+def driver():
+	HDL_num = user_input()
+	value, mes = check_HDL(HDL_num)
+	return value, mes
+value, mes = driver()
