@@ -1,5 +1,5 @@
+import HDL
 def interface():
-	import HDL
 	while True:
 		print("My Program")
 		print("Options: ")
@@ -9,8 +9,7 @@ def interface():
 		if choice =='9':
 			break
 		elif choice =='1':
-			value, mes = driver()			
+			value, mes = HDL.driver()			
 			break
 if __name__=="__main__":
-	import HDL
 	interface()
