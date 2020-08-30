@@ -8,7 +8,8 @@ def interface():
 		choice = input("Enter your choice: ")
 		if choice =='9':
 			break
-		if choice =='1':
+		elif choice =='1':
 			value, mes = driver()			
 			break
-interface()
+if __name__=="__main__":
+	interface()
