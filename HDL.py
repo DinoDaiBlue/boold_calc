@@ -17,4 +17,5 @@ def driver():
 	value, mes = check_HDL(HDL_num)
 	HDL_output(value, mes)
 	return value, mes
-value, mes = driver()
+if __name__=="__main__":
+	value, mes = driver()
