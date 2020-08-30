@@ -12,4 +12,5 @@ def interface():
 			value, mes = driver()			
 			break
 if __name__=="__main__":
+	import HDL
 	interface()
